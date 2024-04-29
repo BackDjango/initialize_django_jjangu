@@ -10,6 +10,26 @@
 
 ## 🧑🏼‍💻 요구 사항 및 목표
 - [ ] 자기한테 맞는 Django 초기 설정
+  - [ ] `settings.py` 설정
+  - [ ] `config/env.py` 수정
+  - [ ] `config/asgi.py` 수정
+  - [ ] `config/urls.py` 수정
+  - [ ] `config/wsgi.py` 수정
+  - [ ] `config/settings/celery.py` 수정
+  - [ ] `config/settings/cors.py` 수정
+  - [ ] `config/settings/sentry.py` 수정
+  - [ ] `config/settings/sessions.py` 수정
+  - [ ] `config/django/base.py` 수정
+  - [ ] `config/django/local.py` 수정
+  - [ ] `config/django/production.py` 수정
+  - [ ] `config/django/test.py` 수정
+  - [ ] Mypy 라이브러리 설치
+  - [ ] pre-commit 라이브러리 설치
+  - [ ] .env 파일 생성
+  - [ ] gunicorn - Procfile 생성
+  - [ ] pyproject.toml
+  - [ ] Swagger `drf-yasg` 세팅
+  - [ ] 최종 makemigrations 수행
 
 - [ ] Auth (app) 기능 구현
 
