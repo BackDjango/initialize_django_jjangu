@@ -11,6 +11,7 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+# config.settings 폴더를 통해 asgi 서버 설정을 모듈화
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.django.base')
 
 application = get_asgi_application()

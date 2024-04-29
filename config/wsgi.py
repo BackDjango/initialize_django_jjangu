@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+# base.py 를 바탕으로 애플리케이션 서버 가져옴
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.django.base')
 
 application = get_wsgi_application()

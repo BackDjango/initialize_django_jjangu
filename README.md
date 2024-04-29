@@ -11,9 +11,9 @@
 ## 🧑🏼‍💻 요구 사항 및 목표
 - [ ] 자기한테 맞는 Django 초기 설정
   - [✔️] `config/env.py` 수정
-  - [ ] `config/asgi.py` 수정
+  - [✔️] `config/asgi.py` 수정
   - [ ] `config/urls.py` 수정
-  - [ ] `config/wsgi.py` 수정
+  - [✔️] `config/wsgi.py` 수정
   - [ ] `config/settings/celery.py` 수정
   - [ ] `config/settings/cors.py` 수정
   - [ ] `config/settings/sentry.py` 수정
