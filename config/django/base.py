@@ -1,8 +1,11 @@
-
+import environ, os
 from config.env import APPS_DIR, BASE_DIR, env
 
+# SECRET_KEY 생성 및 분리
+env = environ.Env()
+environ.Env().read_env(os.path.join(BASE_DIR, '.env'))
+SECRET_KEY = env('SECRET_KEY')
 
-SECRET_KEY = None
 
 DEBUG = True
 
@@ -22,10 +25,7 @@ WSGI_APPLICATION = ""
 
 DATABASES = {}
 
-
-AUTH_PASSWORD_VALIDATORS = [
-    
-]
+AUTH_PASSWORD_VALIDATORS = []
 
 LANGUAGE_CODE = "ko-KR"
 
