@@ -11,13 +11,57 @@ DEBUG = env.bool("DJANGO_DEBUG", default=True)
 ALLOWED_HOSTS = [ "*" ]
 
 # Applicaiton Definitions
-LOCAL_APPS = []
-THIRD_PARTY_APPS = []
-INSTALLED_APPS = []
-MIDDLEWARE = []
-ROOT_URLCONF = []
-TEMPLATES = []
-WSGI_APPLICATION = ""
+LOCAL_APPS = [
+    
+]
+THIRD_PARTY_APPS = [
+    "rest_framework",
+    # "django_celery_results",
+    # "django_celery_beat",
+    # "django_filters",
+    # "corsheaders",
+    # "django_extensions",
+    # "rest_framework_jwt",
+]
+# Combine all above things
+INSTALLED_APPS = [
+    # 'django.contrib.admin',
+    # 'django.contrib.auth',
+    # 'django.contrib.contenttypes',
+    # 'django.contrib.sessions',
+    # 'django.contrib.messages',
+    *THIRD_PARTY_APPS,
+    *LOCAL_APPS,
+]
+
+MIDDLEWARE = [
+    "django.middleware.security.SecurityMiddleware",
+    # "corsheaders.middleware.CorsMiddleware",
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
+    # "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    # "django.middleware.csrf.CsrfViewMiddleware",
+    # "django.contrib.auth.middleware.AuthenticationMiddleware",
+    # "django.contrib.messages.middleware.MessageMiddleware",
+    # "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+ROOT_URLCONF = "config.urls"
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [os.path.join(APPS_DIR, "templates")],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                # "django.contrib.auth.context_processors.auth",
+                # "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
+]
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database

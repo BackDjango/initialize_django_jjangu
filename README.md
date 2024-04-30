@@ -22,6 +22,7 @@
   - [ ] `config/django/base.py` 수정
     - [✔️] SECRET_KEY 생성 및 분리
     - [✔️] DEBUG 및 ALLOWED_HOST 설정
+    - [✔️] Application Definition 설정
   - [ ] `config/django/local.py` 수정
   - [ ] `config/django/production.py` 수정
   - [ ] `config/django/test.py` 수정
