@@ -12,15 +12,16 @@
 ## 🧑🏼‍💻 요구 사항 및 목표
 - [ ] 자기한테 맞는 Django 초기 설정
   - [✔️] `config/env.py` 수정
-  - [✔️] `config/asgi.py` 수정
+  - [✔️] `config/asgi.py` & `config/wsgi.py` 수정
+    - [✔️] `manage.py` 의 DJANGO_SETTINGS_MODULE 환경 변수 조정
   - [ ] `config/urls.py` 수정
-  - [✔️] `config/wsgi.py` 수정
   - [ ] `config/settings/celery.py` 수정
   - [ ] `config/settings/cors.py` 수정
   - [ ] `config/settings/sentry.py` 수정
   - [ ] `config/settings/sessions.py` 수정
   - [ ] `config/django/base.py` 수정
-    - [✔️] SECRET_KEY 생성 및 분리
+    - [❗️] SECRET_KEY 생성 및 분리
+    - [✔️] DEBUG 및 ALLOWED_HOST 설정
   - [ ] `config/django/local.py` 수정
   - [ ] `config/django/production.py` 수정
   - [ ] `config/django/test.py` 수정
@@ -45,3 +46,5 @@
 - [ ] Swagger 라이브러리 적용
 
 - [ ] 맞는 View 생성
+
+## 📂 기본 파일 구조
