@@ -7,6 +7,7 @@
 - python == 3.12.2
 - django == 5.0.3
 - djangorestframework == 3.15.1
+- django-environ == 0.11.2
 
 ## 🧑🏼‍💻 요구 사항 및 목표
 - [ ] 자기한테 맞는 Django 초기 설정
