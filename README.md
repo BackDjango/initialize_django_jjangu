@@ -48,3 +48,22 @@
 - [ ] 맞는 View 생성
 
 ## 📂 기본 파일 구조
+config
+├── __init__.py
+├── django
+│   ├── __init__.py
+│   ├── base.py
+│   ├── local.py
+│   ├── production.py
+│   └── test.py
+├── settings
+│   ├── __init__.py
+│   ├── celery.py
+│   ├── cors.py
+│   ├── sentry.py
+│   └── sessions.py
+├── urls.py
+├── env.py
+└── wsgi.py
+├── asgi.py
+...
