@@ -2,8 +2,8 @@ import environ, os
 from config.env import APPS_DIR, BASE_DIR, env
 from config.settings import *
 
+
 # SECRET_KEY 생성 및 분리
-env = environ.Env()
 environ.Env().read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env('SECRET_KEY')
 
