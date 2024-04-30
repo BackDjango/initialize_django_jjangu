@@ -65,9 +65,16 @@ WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
-DATABASES = {}
-AUTH_PASSWORD_VALIDATORS = []
-AUTH_USER_MODEL = ""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # ATOMIC_REQUEST 를 True로 설정하여 일관성 유지
+        'ATOMIC_REQUESTS': True,
+    }
+}
+# AUTH_PASSWORD_VALIDATORS = []
+# AUTH_USER_MODEL = ""
 
 
 # Internationalization
